@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>Leo Daiji Waltmann</h1>
+								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
+								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#aboutme">About Me</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+					
+					<section id="projects">
+						<!--visualisations projects-->
+						<div class="content">
+							<div class="inner">
+								<h4><br><center>These projects are about visualisations</center></h4>
+							</div>
+						</div>
+						<header id="header">
+
+							<nav>
+								<ul>
+									<li><a href="#vol">Visualising Oceanic Lightning</a></li>
+									<li><a href="#aip">Astronomical Image Processing</a></li>
+								</ul>
+							</nav>
+						</header>
+						<!--statistics projects-->
+						<section>
+						
+							<div class="content">
+								<div class="inner">
+									<h4><br><center>These projects are about statistics etc</center></h4>
+								</div>
+							</div>
+						
+							<header id="header">
+	
+								<nav>
+									<ul>
+										<li><a href="#oslo">The Oslo Model</a></li>
+										<li><a href="#regr">Regression and Cross Validation</a></li>
+									</ul>
+								</nav>
+							</header>
+						</section>
+					
+					</section>
+			
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+						<article id="aboutme">
+							<h2 class="major">About Me</h2>
+							<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+							<p>THIS IS ABOUT ME
+								er, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
+								<p>Lorem</p>
+						</article>
+
+						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<p>Phone: +447856429956<br>Email: lwaltmann99@gmail.com</p>
+
+							<ul class="icons">
+
+								<li><a href="https://www.linkedin.com/in/leo-w-775048137/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/ldaijiw" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</article>
+
+							<!-- Visualising Oceanic Lightning -->
+							<article id="vol">
+								<h2 class="major">Visualising Oceanic<br>Lightning</h2>
+								<span class="image main"><img src="images/vol_1.png" alt="" /></span>
+								<h5>Visualisations showing frequency and energy density of lightning over the Americas and Atlantic Ocean.</h5>
+								<p>Using a year's worth of data from the ERA5 dataset and the GOES-16 lightning mapper satellite, I created visualisations to uncover any seasonal or diurnal patterns between oceanic variables (such as temperature and humidity), and lightning frequency and energy.</p>
+								<p>All figures were made with the Plotly package in Python using OOP to enable great flexibility with choosing any selection of days and hours to investigate. As the lightning data was from a relatively new dataset, I was also required to evaluate the quality of my figures using the <i>quality flag</i> variable from the dataset, this informed the end-user of any potential errors for any datapoints in the lightning detection algorithm.</p>
+							</article>
+							
+							<!-- Astronomical Image Processing-->
+							<article id="aip">
+								<h2 class="major">Astronomical Image<br>Processing</h2>
+								<span class="image main"><img src="images/detected points.png" alt="" /></span>
+								<h5>Detecting and cataloguing galaxies from a telescopic dataset</h5>
+								<p>Using data from the Kitt peak telescope I built an algorithm to detect and catalogue the characteristics (such as position and brightness) of any potential galaxy sources. Utilising machine learning techniques to fit and optimise an aperture around a potential source. Once the aperture was fit the algorithm would then catalogue any key features of the source.</p>
+								<p>The dataset was not perfect, there were issues with blooming (similar to lens flare with regular cameras), and so inspired by the <a href="#vol">GOES-16 dataset I used in another project</a> I added a <i>quality flag</i> feature in the algorithm that would indicate any potential errors in a catalogued source.</p>
+							</article>
+							
+							<!-- The Oslo Model -->
+							<article id="oslo">
+								<h2 class="major">The Oslo Model</h2>
+								<span class="image main"><img src="images/oslomodel.png" alt="" /></span>
+								<h5>Simulations and statistics to model complex behaviour in systems</h5>
+								<p>Simulated the behaviour of the Oslo Model, used to explain the emergent complex behaviour of avalanches just from examining piles of grains locally. This project involved constructing and testing the avalanche generating algorithm, followed by using statistics and data collapsing to further investigate the behaviour of the model.</p>
+							</article>
+
+							<!-- Regression and Cross Validation -->
+							<article id="regr">
+								<h2 class="major">Regression and<br>Cross Validation</h2>
+								<span class="image main"><img src="images/Errors against Order for Ridge function.png" alt="" /></span>
+								<h5>Finding and fitting trends using regression and cross validation techniques</h5>
+								<p>This project was all about investigating different techniques in fitting trends to data following a randomly generated polynomial trend. The techniques explored included the Mean Squared Error, Ridge regression, Lasso regression, and K-fold cross validation. All fitting algorithms were coded from scratch testing polynomial orders up to 20 as well as datasets up to 1000 points.</p>
+							</article>
+
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
