@@ -17,8 +17,12 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Leo Daiji Waltmann</h1>
-								<p>A showcase of computational projects ranging from visualising satellite data to simulating mathematical models.</p>
+								<!-- <p>A showcase of computational projects ranging from visualising satellite data to simulating mathematical models.</p> -->
 							</div>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/leowaltmann" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/ldaijiw" class="icon brands fa-github" target = "_blank"><span class="label">GitHub</span></a></li>
+							</ul>
 						</div>
 						<nav>
 							<ul>
@@ -30,10 +34,25 @@
 					</header>
 					
 					<section id="projects">
+						<!--sparta global projects-->
+						<div class="content">
+							<div class="inner">
+								<h3><br><center>Sparta Global DevOps Training Course</center></h3>
+							</div>
+						</div>
+						<header id="header">
+
+							<nav>
+								<ul>
+									<li><a href="#abs">Airport Booking System</a></li>
+									<li><a href="#ter">Orchestration with Terraform</a></li>
+								</ul>
+							</nav>
+						</header>
 						<!--visualisations projects-->
 						<div class="content">
 							<div class="inner">
-								<h4><br><center>Visualisations</center></h4>
+								<h3><br><center>Visualisations</center></h3>
 							</div>
 						</div>
 						<header id="header">
@@ -50,7 +69,7 @@
 						
 							<div class="content">
 								<div class="inner">
-									<h4><br><center>Statistical Analyses</center></h4>
+									<h3><br><center>Statistical Analyses</center></h3>
 								</div>
 							</div>
 						
@@ -85,48 +104,60 @@
 
 							<ul class="icons">
 
-								<li><a href="https://www.linkedin.com/in/leo-w-775048137/" class="icon brands fa-linkedin" target="_blank"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/leowaltmann" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/ldaijiw" class="icon brands fa-github" target = "_blank"><span class="label">GitHub</span></a></li>
 							</ul>
 						</article>
 
-							<!-- Visualising Oceanic Lightning -->
-							<article id="vol">
-								<h2 class="major">Visualising Oceanic<br>Lightning</h2>
-								<span class="image main"><img src="images/vol_1.png" alt="" /></span>
-								<h5>Visualisations showing frequency and energy density of lightning over the Americas and Atlantic Ocean.</h5>
-								<p>Using a year's worth of data from the ERA5 dataset and the GOES-16 lightning mapper satellite, I created visualisations to uncover any seasonal or diurnal patterns between oceanic variables (such as temperature and humidity), and lightning frequency and energy.</p>
-								<p>All figures were made with the Plotly package in Python using OOP to enable great flexibility with choosing any selection of days and hours to investigate. As the lightning data was from a relatively new dataset, I was also required to evaluate the quality of my figures using the <i>quality flag</i> variable from the dataset, this informed the end-user of any potential errors for any datapoints in the lightning detection algorithm.</p>
-							</article>
-							
-							<!-- Astronomical Image Processing-->
-							<article id="aip">
-								<h2 class="major">Astronomical Image<br>Processing</h2>
-								<span class="image main"><img src="images/detected points.png" alt="" /></span>
-								<h5>Detecting and cataloguing galaxies from a telescopic dataset</h5>
-								<p>Using data from the Kitt peak telescope I built an algorithm to detect and catalogue the characteristics (such as position and brightness) of any potential galaxy sources. Utilising machine learning techniques to fit and optimise an aperture around a potential source. Once the aperture was fit the algorithm would then catalogue any key features of the source.</p>
-								<p>The dataset was not perfect, there were issues with blooming (similar to lens flare with regular cameras), and so inspired by the <a href="#vol">GOES-16 dataset I used in another project</a> I added a <i>quality flag</i> feature in the algorithm that would indicate any potential errors in a catalogued source.</p>
-							</article>
-							
-							<!-- The Oslo Model -->
-							<article id="oslo">
-								<h2 class="major">The Oslo Model</h2>
-								<h5>Simulations and statistics to model complex behaviour in systems</h5>
-								<span class="image main"><img src="images/oslomodel.png" alt="" /></span>
-								<p><i>Plot showing the evolution of a system height with time; the smaller systems reach a stable "recurrent" configuration before the larger systems. (Feb 2020)</i></p>
-								<p>Complexity explains the emergent properties of a system by examining the local behaviour of the individual components. For example, the net movement of <a href="https://www.youtube.com/watch?v=V4f_1_r80RY" target="_blank">a flock of starling birds</a> can be determined by considering the motion of one bird and its neighbours.</p>
-								<p>In this project I simulated the behaviour of the Oslo Model, used to explain the emergent behaviour of sandpiles. In particular the characteristics of an avalanche, when <a href="https://youtu.be/KnOkkC4QND8?t=147" target="_blank">one grain of sand toppling causes a mass collapse of the pile</a>, can be computed by examining the local slope of columns of grains. This project involved constructing and testing the avalanche generating algorithm, followed by using statistics and data collapsing to further investigate the behaviour of the model. As it would be inefficient to visualise the actual pile of grains, the only way to ensure the program was working as intended was with rigorous testing and assertions to prevent any unexpected results.</p>
-							</article>
+						<!-- Airport Booking System -->
+						<article id="abs">
+							<h2 class="major">Airport Booking<br>System</h2>
+							<h5>Using Python and MSSQL to create a flight booking system for airport staff</h5>
+							<ul class="icons">
+								<li><a href="https://github.com/ldaijiw/airport_project" class="icon brands fa-github" target = "_blank"><span class="label">GitHub</span></a></li>
+							</ul>
+							<p>For this project we were tasked with creating a booking system for airport staff that would have a wide range of functionality. The main challenge was planning, setting up and configuring the backend database, hosted with AWS Relational Database Services. We then wrote several classes implementing OOP with Python, for staff members, passengers, and the terminal interface, as well as taking the initiative to increment and build a front-end webpage with Flask.</p>
+						</article>
 
-							<!-- Regression and Cross Validation -->
-							<article id="regr">
-								<h2 class="major">Regression and<br>Cross Validation</h2>
-								<h5>Finding and fitting trends using regression and cross validation techniques</h5>
-								<span class="image main"><img src="images/Errors against Order for Ridge function.png" alt="" /></span>
-								<p><i>Graph showing the averaged error for a polynomial fit of up to order 20 with some randomly generated data; the significant dip shows the data is likely to be a polynomial of order 7. (Jun 2018)</i></p>
-								<p>This project was all about investigating different techniques in fitting trends to data following a randomly generated polynomial trend. The techniques I explored included the Mean Squared Error, Ridge regression, Lasso regression, and K-fold cross validation. All fitting algorithms were coded from scratch, testing polynomial orders up to 20 as well as datasets up to 1000 points.</p>
-								<p>I particularly enjoyed the search for the optimal parameters to obtain the ideal compromise between computational power and training/testing datasets. As well as a final report, I presented my results to secondary school students on a university open day, finding ways to explain the key concepts without overcomplicating the subject.</p>
-							</article>
+						<!-- Orchestration with Terraform -->
+						<article id="ter">
+							<h2 class="major">Orchestration with<br>Terraform</h2>
+							<h5>Using Terraform to orchestrate and set up a Virtual Private Cloud in AWS</h5>
+							<ul class="icons">
+								<li><a href="https://github.com/ldaijiw/terraform" class="icon brands fa-github" target = "_blank"><span class="label">GitHub</span></a></li>
+							</ul>
+							<p>Terraform is an extremely useful IaC orchestration tool used to provision, organise, and manage infrastructure components. It's a common tool in the DevOps industry as it allows teams to automate the building of infrastructure very efficiently.</p>
+							<p>For this project I used Terraform to set up a Virtual Private Cloud in AWS in order to host a web application, including all the necessary components including a public and private subnet, Network ACLs, Internet Gateways,  and Route Tables. I also then configured and initialised Amazon EC2 instances to host the application and database in the public and private subnet respectively, with their own unique security groups. Using Terraform enabled me to create a VPC and start the web application from scrath within seconds, showing just how powerful Infrastructure as Code can be.</p>
+						</article>
+						
+						<!-- Astronomical Image Processing-->
+						<article id="aip">
+							<h2 class="major">Astronomical Image<br>Processing</h2>
+							<span class="image main"><img src="images/detected points.png" alt="" /></span>
+							<h5>Detecting and cataloguing galaxies from a telescopic dataset</h5>
+							<p>Using data from the Kitt peak telescope I built an algorithm to detect and catalogue the characteristics (such as position and brightness) of any potential galaxy sources. Utilising machine learning techniques to fit and optimise an aperture around a potential source. Once the aperture was fit the algorithm would then catalogue any key features of the source.</p>
+							<p>The dataset was not perfect, there were issues with blooming (similar to lens flare with regular cameras), and so inspired by the <a href="#vol">GOES-16 dataset I used in another project</a> I added a <i>quality flag</i> feature in the algorithm that would indicate any potential errors in a catalogued source.</p>
+						</article>
+						
+						<!-- The Oslo Model -->
+						<article id="oslo">
+							<h2 class="major">The Oslo Model</h2>
+							<h5>Simulations and statistics to model complex behaviour in systems</h5>
+							<span class="image main"><img src="images/oslomodel.png" alt="" /></span>
+							<p><i>Plot showing the evolution of a system height with time; the smaller systems reach a stable "recurrent" configuration before the larger systems. (Feb 2020)</i></p>
+							<p>Complexity explains the emergent properties of a system by examining the local behaviour of the individual components. For example, the net movement of <a href="https://www.youtube.com/watch?v=V4f_1_r80RY" target="_blank">a flock of starling birds</a> can be determined by considering the motion of one bird and its neighbours.</p>
+							<p>In this project I simulated the behaviour of the Oslo Model, used to explain the emergent behaviour of sandpiles. In particular the characteristics of an avalanche, when <a href="https://youtu.be/KnOkkC4QND8?t=147" target="_blank">one grain of sand toppling causes a mass collapse of the pile</a>, can be computed by examining the local slope of columns of grains. This project involved constructing and testing the avalanche generating algorithm, followed by using statistics and data collapsing to further investigate the behaviour of the model. As it would be inefficient to visualise the actual pile of grains, the only way to ensure the program was working as intended was with rigorous testing and assertions to prevent any unexpected results.</p>
+						</article>
+
+						<!-- Regression and Cross Validation -->
+						<article id="regr">
+							<h2 class="major">Regression and<br>Cross Validation</h2>
+							<h5>Finding and fitting trends using regression and cross validation techniques</h5>
+							<span class="image main"><img src="images/Errors against Order for Ridge function.png" alt="" /></span>
+							<p><i>Graph showing the averaged error for a polynomial fit of up to order 20 with some randomly generated data; the significant dip shows the data is likely to be a polynomial of order 7. (Jun 2018)</i></p>
+							<p>This project was all about investigating different techniques in fitting trends to data following a randomly generated polynomial trend. The techniques I explored included the Mean Squared Error, Ridge regression, Lasso regression, and K-fold cross validation. All fitting algorithms were coded from scratch, testing polynomial orders up to 20 as well as datasets up to 1000 points.</p>
+							<p>I particularly enjoyed the search for the optimal parameters to obtain the ideal compromise between computational power and training/testing datasets. As well as a final report, I presented my results to secondary school students on a university open day, finding ways to explain the key concepts without overcomplicating the subject.</p>
+						</article>
 
 
 					</div>
